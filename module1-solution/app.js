@@ -11,6 +11,7 @@ function LunchCheckController($scope) {
   $scope.check = function (){
     if(!$scope.dishesList){
       $scope.userMsg = 'Please enter data first'
+      $scope.style = {'color':'black'}
       return;
     }
     var dishesArr = $scope.dishesList.split(',');
